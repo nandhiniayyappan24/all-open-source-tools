@@ -1,0 +1,32 @@
+/*******************************************************************************
+ * Copyright (c) 2009, 2026 Mountainminds GmbH & Co. KG and Contributors
+ * This program and the accompanying materials are made available under
+ * the terms of the Eclipse Public License 2.0 which is available at
+ * https://www.eclipse.org/legal/epl-2.0
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ *
+ * Contributors:
+ *    Brock Janiczak - initial API and implementation
+ *
+ *******************************************************************************/
+package org.jacoco.ant;
+
+import static org.jacoco.ant.AntUnitSuiteFactory.suiteFor;
+
+import org.apache.ant.antunit.junit4.AntUnitSuiteRunner;
+import org.junit.runner.RunWith;
+
+import junit.framework.TestSuite;
+
+/**
+ * Tests for {@link AgentTask}.
+ */
+@RunWith(AntUnitSuiteRunner.class)
+public class AgentTaskTest {
+
+	public static TestSuite suite() {
+		return suiteFor(AgentTaskTest.class);
+	}
+
+}

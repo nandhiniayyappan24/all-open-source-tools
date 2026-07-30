@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/org.jacoco.core.test.validation.groovy"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "component: test"
+      - "language: Groovy"
+    allow:
+      - dependency-name: "org.codehaus.groovy:*"
+    ignore:
+      - dependency-name: "org.codehaus.groovy:*"
+        versions: ">=4.0.0"
